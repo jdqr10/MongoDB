@@ -1,0 +1,137 @@
+// set-product.mongodb
+
+use("pet_store")
+
+db.products.updateOne(
+  // query
+  {_id: 1},
+  // change => operators
+  {
+    $set: {
+      name: 'Change name',
+      price: 3000,
+    }
+  }
+)
+
+  db.products.updateOne(
+    { "_id": 1 },
+    {
+      $set: {
+        "name": "Nuevo nombre 1",
+        "price": 25.99,
+        "category": "Nueva categoría 1",
+        "description": "Nueva descripción 1"
+      }
+    }
+  );
+  
+  db.products.updateOne(
+    { "_id": 2 },
+    {
+      $set: {
+        "name": "Nuevo nombre 2",
+        "price": 19.95,
+        "category": "Nueva categoría 2",
+        "description": "Nueva descripción 2"
+      }
+    }
+  );
+  
+  db.products.updateOne(
+    { "_id": 3 },
+    {
+      $set: {
+        "name": "Nuevo nombre 3",
+        "price": 39.99,
+        "category": "Nueva categoría 3",
+        "description": "Nueva descripción 3"
+      }
+    }
+);
+
+db.products.updateOne(
+    { "_id": 4 },
+    {
+      $set: {
+        "name": "Nuevo nombre 11",
+        "price": 29.99,
+        "category": "Nueva categoría 11",
+        "description": "Nueva descripción 11"
+      }
+    }
+  );
+  
+  db.products.updateOne(
+    { "_id": 5 },
+    {
+      $set: {
+        "name": "Nuevo nombre 12",
+        "price": 49.95,
+        "category": "Nueva categoría 12",
+        "description": "Nueva descripción 12"
+      }
+    }
+  );
+  
+  db.products.updateOne(
+    { "_id": 6 },
+    {
+      $set: {
+        "name": "Nuevo nombre 13",
+        "price": 15.49,
+        "category": "Nueva categoría 13",
+        "description": "Nueva descripción 13"
+      }
+    }
+);
+
+db.products.updateOne(
+    { "_id": 7 },
+    {
+      $set: {
+        "name": "Nuevo nombre 14",
+        "price": 18.75,
+        "category": "Nueva categoría 14",
+        "description": "Nueva descripción 14"
+      }
+    }
+  );
+  
+  db.products.updateOne(
+    { "_id": 8},
+    {
+      $set: {
+        "name": "Nuevo nombre 15",
+        "price": 22.99,
+        "category": "Nueva categoría 15",
+        "description": "Nueva descripción 15"
+      }
+    }
+  );
+  
+  db.products.updateOne(
+    { "_id": 9 },
+    {
+      $set: {
+        "name": "Nuevo nombre 16",
+        "price": 12.49,
+        "category": "Nueva categoría 16",
+        "description": "Nueva descripción 16"
+      }
+    }
+  );
+  
+  db.products.updateOne(
+    { "_id": 10 },
+    {
+      $set: {
+        "name": "Nuevo nombre 17",
+        "price": 35.00,
+        "category": "Nueva categoría 17",
+        "description": "Nueva descripción 17"
+      }
+    }
+  );
+  
+  
