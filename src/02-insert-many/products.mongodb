@@ -1,0 +1,140 @@
+// products.mongodb
+
+use("pet_store")
+
+db.products.drop() // elimina los documentos creados en la colleccion anteriormente
+
+db.products.insertMany([
+  {
+    _id: 1,
+    name: "Prodcut 1",
+    price: 100
+  },
+  {
+    _id: 2,
+    name: "Prodcut 2",
+    price: 20
+  },
+  {
+    _id: 3,
+    name: "Prodcut 3",
+    price: 120
+  },
+  {
+    _id: 4,
+    name: "Prodcut 4",
+    price: 120
+  },
+  {
+    "title": "Snacks naturales de pollo para perros",
+    "price": 5.99,
+    "description": "Deliciosos premios saludables hechos con pollo real.",
+    "category": "Alimentación",
+    "image": "imagen5.jpg"
+  },
+  {
+    "title": "Arenero para gatos autolimpiable",
+    "price": 99.00,
+    "description": "Arenero innovador que limpia automáticamente los desechos.",
+    "category": "Higiene",
+    "image": "imagen6.jpg"
+  },
+  {
+    "title": "Cepillo deslanador para gatos",
+    "price": 12.49,
+    "description": "Herramienta para eliminar el exceso de pelo y prevenir nudos.",
+    "category": "Cuidado del pelaje",
+    "image": "imagen7.jpg"
+  },
+  {
+    "title": "Arnés reflectante para perros",
+    "price": 15.99,
+    "description": "Arnés ajustable con tiras reflectantes para mayor visibilidad nocturna.",
+    "category": "Paseo",
+    "image": "imagen8.jpg"
+  },
+  {
+    "title": "Jaula de pájaros espaciosa",
+    "price": 49.95,
+    "description": "Jaula grande con perchas y comederos para pájaros pequeños.",
+    "category": "Aves",
+    "image": "imagen9.jpg"
+  },
+  {
+    "title": "Champú hipoalergénico para mascotas",
+    "price": 8.99,
+    "description": "Fórmula suave para bañar a perros y gatos con piel sensible.",
+    "category": "Higiene",
+    "image": "imagen10.jpg"
+  },
+  {
+    "title": "Juguete interactivo para gatos",
+    "price": 14.99,
+    "description": "Juguete con plumas y pelotas para estimular el juego activo.",
+    "category": "Juguetes",
+    "image": "imagen11.jpg"
+  },
+  {
+    "title": "Correa extensible para perros",
+    "price": 19.95,
+    "description": "Correa resistente con sistema retráctil para mayor libertad de movimiento.",
+    "category": "Paseo",
+    "image": "imagen12.jpg"
+  },
+  {
+    "title": "Cama ortopédica para perros grandes",
+    "price": 59.99,
+    "description": "Cama cómoda y de apoyo para razas grandes y perros mayores.",
+    "category": "Descanso",
+    "image": "imagen13.jpg"
+  },
+  {
+    "title": "Pelotas de tenis para perros",
+    "price": 3.49,
+    "description": "Pelotas resistentes diseñadas para juegos de lanzar y buscar.",
+    "category": "Juguetes",
+    "image": "imagen14.jpg"
+  },
+  {
+    "title": "Peine anti-pulgas para gatos",
+    "price": 6.79,
+    "description": "Peine de dientes finos para eliminar pulgas y suciedad del pelaje.",
+    "category": "Cuidado del pelaje",
+    "image": "imagen15.jpg"
+  },
+  {
+    "title": "Comedero elevado para perros",
+    "price": 24.99,
+    "description": "Plataforma elevada para una postura más cómoda al comer.",
+    "category": "Alimentación",
+    "image": "imagen16.jpg"
+  },
+  {
+    "title": "Juguetes chirriantes para cachorros",
+    "price": 11.50,
+    "description": "Set de juguetes chirriantes para estimular el instinto de juego.",
+    "category": "Juguetes",
+    "image": "imagen17.jpg"
+  },
+  {
+    "title": "Collar repelente de pulgas para perros",
+    "price": 9.95,
+    "description": "Collar impermeable que repele pulgas y garrapatas por meses.",
+    "category": "Cuidado del pelaje",
+    "image": "imagen18.jpg"
+  },
+  {
+    "title": "Rascador de sisal para gatos",
+    "price": 29.99,
+    "description": "Rascador resistente para mantener las uñas de tu gato sanas.",
+    "category": "Accesorios para gatos",
+    "image": "imagen19.jpg"
+  },
+  {
+    "title": "Comedero automático de agua para mascotas",
+    "price": 18.95,
+    "description": "Dispensador de agua que mantiene el suministro fresco y constante.",
+    "category": "Alimentación",
+    "image": "imagen20.jpg"
+  }
+])
